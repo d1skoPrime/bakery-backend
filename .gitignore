@@ -1,0 +1,46 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables file
+.env
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+
+# FuseBox cache
+.fusebox/
+
+# Temp files
+tmp/
+temp/
+
+# Compiled files
+dist/
+build/
+
+# IDE files
+.idea
+.vscode
