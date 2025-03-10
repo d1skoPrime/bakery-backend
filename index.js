@@ -1,4 +1,5 @@
 require("dotenv").config();
+
 const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
@@ -26,6 +27,9 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.use(express.json());
+app.get("/", async(req,res)=>{
+  console.log('server is good working')
+})
 app.get("/api/hello", (req, res) => {
   res.json({ message: "Hello from API!" });
 });
