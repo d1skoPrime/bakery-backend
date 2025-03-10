@@ -4,7 +4,14 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://zinasbakery.vercel.app", // Разрешить запросы только с этого домена
+    methods: ["GET", "POST"], // Разрешить только нужные методы
+    allowedHeaders: ["Content-Type, *"], // Разрешить нужные заголовки
+  })
+);
+
 app.use(express.json());
 
 app.post("/send-email", async (req:any, res:any) => {
