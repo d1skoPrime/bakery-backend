@@ -13,7 +13,9 @@ app.use(
 );
 
 app.use(express.json());
-
+app.get("/api/hello", (req:any, res:any) => {
+  res.json({ message: "Hello from API!" });
+});
 app.post("/send-email", async (req:any, res:any) => {
   const { firstName, lastName, email, message, phonenumber, productname } = req.body;
 
