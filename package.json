@@ -16,7 +16,6 @@
     "ts-node": "^10.9.2"
   },
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/main.js"
+    "start": "node server"
   }
 }
